@@ -1,13 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      Hello
-    </div>
-  );
+class App extends React.Component {
+  render() {
+
+    return (
+      <BrowserRouter>
+        <div className="ui container">
+          <h3 className="header">
+            Hello
+          </h3>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
